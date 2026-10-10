@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 5rem; /* account for fixed navbar height */
+}
+
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;

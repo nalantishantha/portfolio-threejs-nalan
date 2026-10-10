@@ -8,24 +8,19 @@ const Footer = () => {
       </div>
 
       <div className="flex gap-3">
-        <a href="https://github.com/" target="_blank" rel="noreferrer" className="social-icon">
+        <a href="https://github.com/nalantishantha" target="_blank" rel="noreferrer" className="social-icon">
           <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2 invert" />
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="social-icon">
+        <a href="https://www.linkedin.com/in/nalan-liyanage/" target="_blank" rel="noreferrer" className="social-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white w-1/2 h-1/2">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
             <rect x="2" y="9" width="4" height="12" />
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
-        <a href="https://facebook.com/" target="_blank" rel="noreferrer" className="social-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white w-1/2 h-1/2">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-          </svg>
-        </a>
       </div>
 
-      <p className="text-white-500">© 2024 Nalan Tishantha. All rights reserved.</p>
+      <p className="text-white-500">© 2026 Nalan Liyanage. All rights reserved.</p>
     </footer>
   );
 };

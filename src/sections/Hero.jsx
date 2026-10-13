@@ -20,11 +20,14 @@ const Hero = () => {
     <section className="min-h-screen w-full flex flex-col relative" id="home">
       <Leva hidden />
 
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3 relative z-10">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-          Hi, I am Nalan <span className="waving-hand">👋</span>
+          Hi, I am Nalan Liyanage <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">Building Products &amp; Brands</p>
+        <p className="hero_tag text-gray_gradient">AI/ML Engineer &amp; Data Scientist</p>
+        <p className="text-center text-zinc-400 sm:text-lg text-sm max-w-2xl mx-auto font-generalsans">
+          Building intelligent AI agents, ML pipelines, and production systems. Open for full-time roles &amp; freelance projects.
+        </p>
       </div>
 
       <div className="w-full h-full absolute inset-0">

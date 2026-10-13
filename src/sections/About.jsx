@@ -1,8 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Globe from 'react-globe.gl';
 
-import Button from '../components/Button.jsx';
-
 const About = () => {
   const [hasCopiedEmail, setHasCopiedEmail] = useState(false);
   const [hasCopiedPhone, setHasCopiedPhone] = useState(false);

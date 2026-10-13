@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Modal from '../components/Modal.jsx';
 
 import { navLinks } from '../constants/index.js';
 
@@ -17,7 +16,6 @@ const NavItems = ({ onClick = () => {} }) => (
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -39,12 +37,15 @@ const Navbar = () => {
 
           <nav className="sm:flex hidden items-center gap-6">
             <NavItems />
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="bg-black border border-white/70 hover:border-white shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_18px_rgba(255,255,255,0.4)] text-white px-5 py-2 rounded-md font-semibold transition-all"
+            <a
+              href="/assets/K.V.N.T.Liyanage.pdf"
+              download="K.V.N.T.Liyanage.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black border border-white/70 hover:border-white shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_18px_rgba(255,255,255,0.4)] text-white px-5 py-2 rounded-md font-semibold transition-all inline-block"
             >
               Download CV
-            </button>
+            </a>
           </nav>
         </div>
       </div>
@@ -52,19 +53,18 @@ const Navbar = () => {
       <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
         <nav className="p-5 flex flex-col gap-5">
           <NavItems onClick={closeMenu} />
-          <button
-            onClick={() => {
-              setIsModalOpen(true);
-              closeMenu();
-            }}
-            className="bg-black border border-white/70 hover:border-white shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_18px_rgba(255,255,255,0.4)] text-white px-5 py-3 rounded-md font-semibold transition-all w-full"
+          <a
+            href="/assets/K.V.N.T.Liyanage.pdf"
+            download="K.V.N.T.Liyanage.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
+            className="bg-black border border-white/70 hover:border-white shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_18px_rgba(255,255,255,0.4)] text-white px-5 py-3 rounded-md font-semibold transition-all w-full text-center"
           >
             Download CV
-          </button>
+          </a>
         </nav>
       </div>
-
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 };

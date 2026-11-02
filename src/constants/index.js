@@ -74,7 +74,7 @@ export const myProjects = [
     desc: 'TourMateAI is a comprehensive web application designed to give tourists personalized, context-aware travel assistance. It leverages advanced AI capabilities to provide recommendations based on location, weather, and time, alongside a conversational RAG chatbot, a multi-agent itinerary planner, and landmark image recognition.',
     subdesc:
       'Built with React, Python Flask, Google Gemini, LangGraph, and TensorFlow, TourMateAI uses a modern three-tier architecture to deliver a personalized travel experience.',
-    href: '',
+    href: 'https://youtu.be/aDdJ3-o9i18',
     texture: '/assets/TourmateAI.mp4',
     logo: '/assets/tourmateai_logo_colored.png',
     logoStyle: {
@@ -112,7 +112,7 @@ export const myProjects = [
     desc: 'BloxLogicAI is a lightweight, Python-based web application designed to bring advanced intelligence and transparency to the tea supply chain. By integrating Machine Learning and Blockchain technology, the platform empowers stakeholders to make data-driven decisions.',
     subdesc:
       'Built with Streamlit, Facebook Prophet, Scikit-Learn (Isolation Forest), Pandas, and a custom Python SHA-256 hash chain, BloxLogicAI features role-based portals for forecasting, anomaly detection, and blockchain traceability.',
-    href: '',
+    href: 'https://youtu.be/c00G5bQNQmA',
     texture: '/assets/BloxlogicAI.mp4',
     logo: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🍃</text></svg>',
     logoStyle: {

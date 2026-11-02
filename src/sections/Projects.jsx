@@ -61,12 +61,25 @@ const Projects = () => {
 
             {currentProject.href && (
               <a
-                className="flex items-center gap-2 cursor-pointer text-white-600"
+                className="tech-logo group hover:bg-neutral-100/20 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer"
                 href={currentProject.href}
                 target="_blank"
-                rel="noreferrer">
-                <p>Check Live Site</p>
-                <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
+                rel="noreferrer"
+                title="Watch Demo Video"
+                aria-label="Watch Demo Video">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 text-white-600 group-hover:text-white transition-colors">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
               </a>
             )}
           </div>
